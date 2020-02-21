@@ -1,0 +1,112 @@
+html,
+body {
+  font-family: 'Product Sans';
+}
+.navbar .navbar-nav .nav-link:not(.btn) {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.page-header > .content {
+  margin-top: 9%;
+}
+.navbar.navbar-transparent {
+  border-bottom: 1px solid #ffffff4a;
+}
+.navbar .navbar-brand {
+  text-transform: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 5rem;
+}
+
+.bg-black {
+  background: black !important;
+}
+.text-black {
+  color: black;
+}
+.navbar {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+.login-page .page-header:before,
+.profile-page .page-header:before {
+  /* background-color: transparent; */
+}
+
+.footer .copyright {
+  font-size: 14px;
+}
+
+.formins .trackcamp {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 0px;
+  color: black;
+}
+.cardform input {
+  background-color: #f6f6f6;
+  border-radius: 0px;
+  border: 0px;
+  height: 48px;
+  border: 2px solid #f6f6f6;
+}
+.cardform input:focus {
+  border: 2px solid black;
+}
+.ncardbody {
+  min-height: 430px;
+}
+.ncardbody .card-body {
+  padding: 2.25rem;
+}
+.btn {
+  border-radius: 0px;
+}
+.btn-black {
+  background-color: black;
+  font-size: 14px;
+  padding: 17px 22px;
+}
+.btn-black:hover,
+.btn-black:focus {
+  background-color: black;
+}
+
+.sitefooter {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: white;
+}
+.sitefooter ul li a {
+  color: black;
+  text-transform: capitalize;
+}
+.main-panel > .content {
+  min-height: 100vh;
+}
+
+.larrow {
+  background: linear-gradient(45deg, #1d7ce4, #0141c1);
+  padding: 12px;
+  font-size: 10px;
+  margin-left: 7px;
+  border-radius: 29px;
+}
+.btn-cust {
+  background: linear-gradient(45deg, #1d7ce4, #0141c1);
+  font-size: 14px;
+  padding: 17px 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-header > .content {
+    margin-top: 40%;
+  }
+}
