@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Diab.Predict
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- CSS Files -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="./assets/demo/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link href="./assets/fonts/product/product.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#" class="simple-text logo-normal">
+                    Diab.Predict
+                </a>
+                <div class="dateTime">
+                    <p>Thursday, 15</p>
+                    <h3>08:11</h3>
+                </div>
+            </div>
+            <div class="sidebar-wrapper" id="sidebar-wrapper">
+                <ul class="nav">
+                    <li>
+                        <a href="index.html" class="campaignlist active">
+                            <span class="fa fa-user"></span>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patients.html" class="campaignlist">
+                            <span class="fa fa-users"></span>
+                            <p>Patients</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html" class="campaignlist">
+                            <span class="fa fa-question-circle"></span>
+                            <p>Support</p>
+                        </a>
+                    </li>
+
+
+                    <li class="active-pro">
+                        <a href="#" class="btn bg-white text-dark mb-2 mx-5">
+                            <span class="text-left">Logout</span><span
+                                class="fas fa-sign-out-alt float-right mt-2 ml-5"></span>
+                        </a>
+                        <p class="text-center copyright">
+                            ©
+                            2020,
+                            Diab.Predict. All rights reserved.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel" id="main-panel">
+            <div class="content pt-3">
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- <div class="navbar-wrapper">
+                                <div class="navbar-toggle">
+                                    <button type="button" class="navbar-toggler btn btn-dark">
+                                        <span class="navbar-toggler-bar bar1"></span>
+                                        <span class="navbar-toggler-bar bar2"></span>
+                                        <span class="navbar-toggler-bar bar3"></span>
+                                    </button>
+                                </div>
+                            </div> -->
+                            <h3 class="text-capitalize font-weight-bold">Hi Adeniran!</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-right">
+                                <button type="button" class="btn btn-theme" data-toggle="modal" data-target="#modelId">
+                                    <span class="fa fa-user mr-2"></span>
+                                    Add Patient
+                                </button>
+                                <a class="btn btn-dark-sm">
+                                    Logout <span class="fas fa-sign-out-alt ml-2"></span></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mt-2">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <h3 class="mb-0 mt-2 text-theme">
+                                                        <span class="fa fa-users"></span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-9">
+                                                    <p class="mb-0">Patients</p>
+                                                    <h4 class="my-0">24</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <h3 class="mb-0 mt-2 text-theme">
+                                                        <span class="fa fa-users"></span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-9">
+                                                    <p class="mb-0">Diabetic Patients</p>
+                                                    <h4 class="my-0">9</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <h3 class="mb-0 mt-2 text-theme">
+                                                        <span class="fa fa-users"></span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-9">
+                                                    <p class="mb-0">Non-diabetic Patients</p>
+                                                    <h4 class="my-0">15</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <h3 class="mb-0 mt-2 text-theme">
+                                                        <span class="fa fa-percent"></span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-9">
+                                                    <p class="mb-0">Diabetic Rate</p>
+                                                    <h4 class="my-0">37.8 <sub>%</sub></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h4 class="my-0">Chart</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="panel-header-lgxx mt-4">
+                                        <canvas id="distanceChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h4 class="my-0">Recent Patient</h4>
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            <a href="#" class="btn btn-dark">
+                                                View All
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table sitetable table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Date</th>
+                                                <th>Patient's Name</th>
+                                                <th>Age</th>
+                                                <th>Diabetic Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>12th Jan, 20202</td>
+                                                <td>Kate Salami</td>
+                                                <td>21 years</td>
+                                                <td>
+                                                    <span class="badge badge-info">
+                                                        <span class="fa fa-plus pr-1"></span>
+                                                        Positive
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-secondary">
+                                                        <span class="small font-weight-bold">View</span>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-dark">
+                                                        <span class="small font-weight-bold">Download Report</span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>12th Jan, 20202</td>
+                                                <td>Kate Salami</td>
+                                                <td>21 years</td>
+                                                <td>
+                                                    <span class="badge badge-info">
+                                                        <span class="fa fa-plus pr-1"></span>
+                                                        Positive
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-secondary">
+                                                        <span class="small font-weight-bold">View</span>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-dark">
+                                                        <span class="small font-weight-bold">Download Report</span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create Campaign Code</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group cardform">
+                            <label for="campaignName">Campaign Name</label>
+                            <input type="text" id="campaignName" value="" class="form-control">
+                        </div>
+                        <div class="form-group cardform">
+                            <label for="campaignNumbers">Numbers of Cars</label>
+                            <input type="text" id="campaignNumbers" value="" class="form-control">
+                        </div>
+                        <div class="form-group cardform">
+                            <label for="campaignDuration">Campaign Duration</label>
+                            <input type="text" id="campaignDuration" value="" class="form-control">
+                            <!-- Date range picker -->
+                        </div>
+                        <div class="form-group cardform">
+                            <label for="carTrack">Car Track Code</label>
+                            <input type="text" id="carTrack" value="" class="form-control">
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-dark">Create Code</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/core/jquery.min.js"></script>
+    <script src="./assets/js/core/popper.min.js"></script>
+    <script src="./assets/js/core/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+
+
+    <script src="./assets/js/plugins/chartjs.min.js"></script>
+
+    <script src="./assets/js/plugins/bootstrap-notify.js"></script>
+
+    <script src="./assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script>
+
+    <script src="./assets/demo/demo.js"></script>
+    <script>
+        $(document).ready(function () {
+            demo.initDashboardPageCharts();
+
+        });
+    </script>
+</body>
+
+</html>

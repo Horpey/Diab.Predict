@@ -2,12 +2,14 @@ html,
 body {
   font-family: 'Product Sans';
 }
+
 .navbar .navbar-nav .nav-link:not(.btn) {
   font-size: 14px;
   text-transform: capitalize;
 }
 .page-header > .content {
-  margin-top: 9%;
+  margin-top: 8%;
+  margin-bottom: 0px;
 }
 .navbar.navbar-transparent {
   border-bottom: 1px solid #ffffff4a;
@@ -105,6 +107,12 @@ body {
   padding: 17px 22px;
 }
 
+.bar-chart {
+  background-color: #c7d9d9;
+}
+.text-theme {
+  color: #1d7ce4;
+}
 @media screen and (max-width: 768px) {
   .page-header > .content {
     margin-top: 40%;
