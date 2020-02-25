@@ -49,7 +49,7 @@ body {
   margin: 0px !important;
 }
 .dateTime h3 {
-  font-size: 46px !important;
+  font-size: 34px !important;
   margin: 0px !important;
   color: white !important;
   font-weight: bold !important;
@@ -60,6 +60,9 @@ body {
 .off-canvas-sidebar .sidebar-wrapper {
   position: relative;
   height: calc(100vh - 157px);
+}
+select.form-control:focus {
+  border: 2px solid black;
 }
 
 .listhead {
@@ -75,6 +78,9 @@ body {
 .campaignlist p {
   font-size: 14px;
   text-transform: none;
+}
+.campaignlist span {
+  font-size: 16px;
 }
 .activesm {
   font-size: 12px !important;
@@ -368,6 +374,12 @@ body {
   border: 2px solid black;
 }
 .badge-info {
+  border-radius: 0px;
+  padding: 7px 12px;
+  margin-bottom: 0px;
+  font-size: 13px;
+}
+.badge-danger {
   border-radius: 0px;
   padding: 7px 12px;
   margin-bottom: 0px;

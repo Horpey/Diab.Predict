@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Diab.Predict
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- CSS Files -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="./assets/demo/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link href="./assets/fonts/product/product.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#" class="simple-text logo-normal">
+                    Diab.Predict
+                </a>
+                <div class="dateTime">
+                    <p id="CurrentDate"></p>
+                    <h3 id="time">
+                    </h3>
+                </div>
+            </div>
+            <div class="sidebar-wrapper" id="sidebar-wrapper">
+                <ul class="nav">
+                    <li>
+                        <a href="index.html" class="campaignlist ">
+                            <span class="fa fa-user"></span>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patients.html" class="campaignlist active">
+                            <span class="fa fa-users"></span>
+                            <p>Patients</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="campaignlist">
+                            <span class="fa fa-user"></span>
+                            <p>Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html" class="campaignlist">
+                            <span class="fa fa-question-circle"></span>
+                            <p>Support</p>
+                        </a>
+                    </li>
+
+
+                    <li class="active-pro">
+                        <a href="#" class="btn bg-white text-dark mb-2 mx-5">
+                            <span class="text-left">Logout</span><span
+                                class="fas fa-sign-out-alt float-right mt-2 ml-5"></span>
+                        </a>
+                        <p class="text-center copyright">
+                            ©
+                            2020,
+                            Diab.Predict. All rights reserved.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel" id="main-panel">
+            <div class="content pt-3">
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="patients.html" class="h5 text-dark">
+                                <span class="fa fa-arrow-left mr-2" style="font-size: 14px;"></span>
+                                <span class="pt-1">Back</span>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-right">
+                                <button type="button" class="btn btn-theme" data-toggle="modal" data-target="#modelId">
+                                    <span class="fa fa-user mr-2"></span>
+                                    Add Patient
+                                </button>
+                                <a class="btn btn-dark-sm">
+                                    Logout <span class="fas fa-sign-out-alt ml-2"></span></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mt-2">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="card" style="min-height: 494px;">
+                                        <div class="card-body mx-3">
+                                            <h3 class="text-capitalize font-weight-bold mb-3">Diagnosis</h3>
+                                            <hr>
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group cardform">
+                                                            <label for="bs_fast">Blood Sugar (Before Meal)
+                                                                <span class="fa fa-info-circle ml-2"></span>
+                                                            </label>
+                                                            <input type="text" id="bs_fast" value=""
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group cardform">
+                                                            <label for="afterMeal">Blood Sugar (After Meal)
+                                                                <span class="fa fa-info-circle ml-2"></span>
+                                                            </label>
+                                                            <input type="text" id="afterMeal" value=""
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group cardform">
+                                                            <label for="plasma">Plasma Glucose
+                                                                <span class="fa fa-info-circle ml-2"></span>
+                                                            </label>
+                                                            <input type="text" id="plasma" value=""
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group cardform">
+                                                            <label for="plasma">Plasma Glucose (Morning)
+                                                                <span class="fa fa-info-circle ml-2"></span>
+                                                            </label>
+                                                            <input type="text" id="plasma" value=""
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group cardform">
+                                                            <label for="HbA1c">HbA1c
+                                                                <span class="fa fa-info-circle ml-2"></span>
+                                                            </label>
+                                                            <input type="text" id="HbA1c" value=""
+                                                                class="form-control ">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group mt-3">
+                                                    <button type="submit" class="btn btn-dark btn-lg">Make
+                                                        Diagnosis</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="text-capitalize font-weight-bold mb-3">Report</h3>
+
+                                            <div class="">
+                                                <table class="table">
+                                                    <tr>
+                                                        <th>Time of check</th>
+                                                        <th>Blood sugar level</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fasting or before breakfast</td>
+                                                        <td class="text-info">60–90 mg/dl</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2 hours after meal</td>
+                                                        <td class="text-danger">100–120 mg/dl</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Plasma Glucose (any Time)</td>
+                                                        <td class="text-info">2 mmol/L</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Plasma Glucose (Morning)</td>
+                                                        <td class="text-danger">2 mmol/L</td>
+                                                    </tr>
+                                                </table>
+
+                                                <table class="table">
+                                                    <tr>
+                                                        <th class="text-info">Diabetic Status</th>
+                                                        <th>Normal</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-info">Diabetic Type</th>
+                                                        <th>Type 1</th>
+                                                    </tr>
+                                                </table>
+                                                <div class="text-right">
+                                                    <!-- <a href="#" class="btn btn-dark">
+                                                        <span class="fa fa-save mr-2"></span>
+                                                        Save</a> -->
+                                                    <a href="#" class="btn btn-outline-primary text-dark">
+                                                        <span class="fa fa-file-download mr-2"></span>
+                                                        Download Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add New Patient</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group cardform">
+                                <label for="pName">Patient's Name</label>
+                                <input type="text" id="pName" value="" class="form-control">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group cardform">
+                                        <label for="dob">Date of Birth</label>
+                                        <input id="dob" type="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group cardform">
+                                        <label for="gender">Gender</label>
+                                        <select class="form-control" id="gender" style="height: 48px;">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group mt-3">
+                                <button type="submit" class="btn btn-dark">Add Patient</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/js/core/jquery.min.js"></script>
+        <script src="./assets/js/core/popper.min.js"></script>
+        <script src="./assets/js/core/bootstrap.min.js"></script>
+        <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+        <script src="./assets/js/plugins/moment.min.js"></script>
+
+        <script src="./assets/js/plugins/chartjs.min.js"></script>
+
+        <script src="./assets/js/plugins/bootstrap-notify.js"></script>
+
+        <script src="./assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script>
+
+        <!-- <script src="./assets/demo/demo.js"></script> -->
+        <script>
+
+
+            var now = new Date();
+            document.getElementById('CurrentDate').innerHTML = moment(now).format(
+                'Do dddd MMM'
+            );
+
+            //   Time
+            var datetime = null,
+                date = null;
+
+            var update = function () {
+                date = moment(new Date());
+                datetime.html(date.format('h:mma'));
+            };
+
+            $(document).ready(function () {
+                datetime = $('#time');
+                update();
+                setInterval(update, 1000);
+            });
+        </script>
+</body>
+
+</html>

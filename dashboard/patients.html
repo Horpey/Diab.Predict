@@ -39,13 +39,13 @@
             <div class="sidebar-wrapper" id="sidebar-wrapper">
                 <ul class="nav">
                     <li>
-                        <a href="index.html" class="campaignlist active">
-                            <span class="fa fa-home"></span>
+                        <a href="index.html" class="campaignlist ">
+                            <span class="fa fa-user"></span>
                             <p>Home</p>
                         </a>
                     </li>
                     <li>
-                        <a href="patients.html" class="campaignlist">
+                        <a href="patients.html" class="campaignlist active">
                             <span class="fa fa-users"></span>
                             <p>Patients</p>
                         </a>
@@ -92,7 +92,7 @@
                                     </button>
                                 </div>
                             </div> -->
-                            <h3 class="text-capitalize font-weight-bold">Hi Adeniran!</h3>
+                            <h3 class="text-capitalize font-weight-bold">Patients</h3>
                         </div>
                         <div class="col-md-6">
                             <div class="text-right">
@@ -108,106 +108,48 @@
                     </div>
                     <div>
                         <div class="mt-2">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <h3 class="mb-0 mt-2 text-theme">
-                                                        <span class="fa fa-users"></span>
-                                                    </h3>
-                                                </div>
-                                                <div class="col-9">
-                                                    <p class="mb-0">Patients</p>
-                                                    <h4 class="my-0">24</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <h3 class="mb-0 mt-2 text-theme">
-                                                        <span class="fa fa-users"></span>
-                                                    </h3>
-                                                </div>
-                                                <div class="col-9">
-                                                    <p class="mb-0">Diabetic Patients</p>
-                                                    <h4 class="my-0">9</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <h3 class="mb-0 mt-2 text-theme">
-                                                        <span class="fa fa-users"></span>
-                                                    </h3>
-                                                </div>
-                                                <div class="col-9">
-                                                    <p class="mb-0">Non-diabetic Patients</p>
-                                                    <h4 class="my-0">15</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <h3 class="mb-0 mt-2 text-theme">
-                                                        <span class="fa fa-percent"></span>
-                                                    </h3>
-                                                </div>
-                                                <div class="col-9">
-                                                    <p class="mb-0">Diabetic Rate</p>
-                                                    <h4 class="my-0">37.8 <sub>%</sub></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="card">
-                                <div class="card-header">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <h4 class="my-0">Chart</h4>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="card-body">
-                                    <div class="panel-header-lgxx mt-4">
-                                        <canvas id="distanceChart"></canvas>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="">
+                                                <form class="form-inline">
+                                                    <div class="form-group">
+                                                        <small id="helpId" class="mr-2">Sort by</small>
+                                                        <label for=""></label>
+                                                        <select class="form-control mr-3" id="gender"
+                                                            style="height: 48px; width: 120px">
+                                                            <option value="gender">Gender</option>
+                                                            <option value="male">Male</option>
+                                                            <option value="female">Female</option>
+                                                        </select>
+
+                                                        <select class="form-control" id="gender"
+                                                            style="height: 48px; width: 120px">
+                                                            <option value="gender">Status</option>
+                                                            <option value="male">Diabetes</option>
+                                                            <option value="female">Non-Diabetes</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                                <!-- <div class="form-group cardform">
+                                                    <select class="form-control" id="gender" style="height: 48px;">
+                                                        <option value="gender">Gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                    </select>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="cardform">
+                                                <input class="form-control" placeholder="Search Patient" />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header">
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <h4 class="my-0">Recent Patient</h4>
-                                        </div>
-                                        <div class="col-md-4 text-right">
-                                            <a href="patients.html" class="btn btn-dark">
-                                                View All
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="card-body">
                                     <table class="table sitetable table-hover">
                                         <thead>
@@ -223,7 +165,7 @@
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>12th Jan, 20202</td>
+                                                <td>12th Jan, 2020</td>
                                                 <td>Kate Salami</td>
                                                 <td>21 years</td>
                                                 <td>
@@ -233,32 +175,32 @@
                                                     </span>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-sm btn-secondary">
+                                                    <a href="view-patient.html" class="mr-2 btn btn-sm btn-secondary">
                                                         <span class="small font-weight-bold">View</span>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dark">
-                                                        <span class="small font-weight-bold">Download Report</span>
-                                                    </button>
+                                                        </button>
+                                                        <a href="diagnose.html" class="btn btn-sm btn-dark">
+                                                            <span class="small font-weight-bold">Diagnose</span>
+                                                            </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>12th Jan, 20202</td>
+                                                <td>12th Jan, 2020</td>
                                                 <td>Kate Salami</td>
                                                 <td>21 years</td>
                                                 <td>
-                                                    <span class="badge badge-info">
-                                                        <span class="fa fa-plus pr-1"></span>
-                                                        Positive
+                                                    <span class="badge badge-danger">
+                                                        <span class="fa fa-minus pr-1"></span>
+                                                        Negative
                                                     </span>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-sm btn-secondary">
+                                                    <a href="view-patient.html" class="mr-2 btn btn-sm btn-secondary">
                                                         <span class="small font-weight-bold">View</span>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dark">
-                                                        <span class="small font-weight-bold">Download Report</span>
-                                                    </button>
+                                                        </>
+                                                        <a href="diagnose.html" class="btn btn-sm btn-dark">
+                                                            <span class="small font-weight-bold">Diagnose</span>
+                                                            </>
                                                 </td>
                                             </tr>
                                         </tbody>

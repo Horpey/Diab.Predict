@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Diab.Predict
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- CSS Files -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="./assets/demo/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link href="./assets/fonts/product/product.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar">
+            <div class="logo">
+                <a href="#" class="simple-text logo-normal">
+                    Diab.Predict
+                </a>
+                <div class="dateTime">
+                    <p id="CurrentDate"></p>
+                    <h3 id="time">
+                    </h3>
+                </div>
+            </div>
+            <div class="sidebar-wrapper" id="sidebar-wrapper">
+                <ul class="nav">
+                    <li>
+                        <a href="index.html" class="campaignlist ">
+                            <span class="fa fa-home"></span>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="patients.html" class="campaignlist">
+                            <span class="fa fa-users"></span>
+                            <p>Patients</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="campaignlist active">
+                            <span class="fa fa-user"></span>
+                            <p>Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html" class="campaignlist">
+                            <span class="fa fa-question-circle"></span>
+                            <p>Support</p>
+                        </a>
+                    </li>
+
+
+                    <li class="active-pro">
+                        <a href="#" class="btn bg-white text-dark mb-2 mx-5">
+                            <span class="text-left">Logout</span><span
+                                class="fas fa-sign-out-alt float-right mt-2 ml-5"></span>
+                        </a>
+                        <p class="text-center copyright">
+                            ©
+                            2020,
+                            Diab.Predict. All rights reserved.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel" id="main-panel">
+            <div class="content pt-3">
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- <div class="navbar-wrapper">
+                                <div class="navbar-toggle">
+                                    <button type="button" class="navbar-toggler btn btn-dark">
+                                        <span class="navbar-toggler-bar bar1"></span>
+                                        <span class="navbar-toggler-bar bar2"></span>
+                                        <span class="navbar-toggler-bar bar3"></span>
+                                    </button>
+                                </div>
+                            </div> -->
+                            <h3 class="text-capitalize font-weight-bold">Profile</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-right">
+                                <button type="button" class="btn btn-theme" data-toggle="modal" data-target="#modelId">
+                                    <span class="fa fa-user mr-2"></span>
+                                    Add Patient
+                                </button>
+                                <a class="btn btn-dark-sm">
+                                    Logout <span class="fas fa-sign-out-alt ml-2"></span></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mt-2">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="media">
+                                                <a class="d-flex" href="#">
+                                                    <img src="./assets/img/avatar.png" class="rounded-circle img-raised"
+                                                        alt="">
+                                                </a>
+                                                <div class="media-body ml-3">
+                                                    <h5 class="m-0">Adeniran Opeyemi</h5>
+                                                    <p class="mb-1">adeniran.opeyemi.ao@gmail.com</p>
+                                                    <button type="button" data-toggle="modal" data-target="#editProfile"
+                                                        class="btn btn-sm btn-dark">Edit Profile</button>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="mt-0">Change Password</h4>
+                                            <hr>
+                                            <form>
+                                                <div class="form-group cardform">
+                                                    <label for="oldPass">Old Password
+                                                    </label>
+                                                    <input type="password" id="oldPass" value="" class="form-control">
+                                                </div>
+
+                                                <div class="form-group cardform">
+                                                    <label for="newPass">New Password
+                                                    </label>
+                                                    <input type="password" id="newPass" value="" class="form-control">
+                                                </div>
+
+                                                <div class="form-group cardform">
+                                                    <label for="confirmnewPass">Confirm New Password
+                                                    </label>
+                                                    <input type="password" id="confirmnewPass" value=""
+                                                        class="form-control">
+                                                </div>
+
+                                                <div class="form-group mt-3">
+                                                    <button type="submit" class="btn btn-dark ">Update Password</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="editProfile" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Edit Profile</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group cardform">
+                                <label for="fName">First Name</label>
+                                <input type="text" id="fName" value="" class="form-control">
+                            </div>
+
+                            <div class="form-group cardform">
+                                <label for="lName">Last Name</label>
+                                <input type="text" id="lName" value="" class="form-control">
+                            </div>
+
+                            <div class="form-group cardform">
+                                <label for="emailA">Email Address</label>
+                                <input type="email" id="emailA" disabled value="adeniran.opeyemi.ao@gmail.com"
+                                    class="form-control">
+                            </div>
+
+
+                            <div class="form-group mt-3">
+                                <button type="submit" class="btn btn-dark">Edit Profile</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add New Patient</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group cardform">
+                                <label for="pName">Patient's Name</label>
+                                <input type="text" id="pName" value="" class="form-control">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group cardform">
+                                        <label for="dob">Date of Birth</label>
+                                        <input id="dob" type="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group cardform">
+                                        <label for="gender">Gender</label>
+                                        <select class="form-control" id="gender" style="height: 48px;">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group mt-3">
+                                <button type="submit" class="btn btn-dark">Add Patient</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/js/core/jquery.min.js"></script>
+        <script src="./assets/js/core/popper.min.js"></script>
+        <script src="./assets/js/core/bootstrap.min.js"></script>
+        <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+        <script src="./assets/js/plugins/moment.min.js"></script>
+
+        <script src="./assets/js/plugins/chartjs.min.js"></script>
+
+        <script src="./assets/js/plugins/bootstrap-notify.js"></script>
+
+        <script src="./assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script>
+
+        <!-- <script src="./assets/demo/demo.js"></script> -->
+        <script>
+
+
+            var now = new Date();
+            document.getElementById('CurrentDate').innerHTML = moment(now).format(
+                'Do dddd MMM'
+            );
+
+            //   Time
+            var datetime = null,
+                date = null;
+
+            var update = function () {
+                date = moment(new Date());
+                datetime.html(date.format('h:mma'));
+            };
+
+            $(document).ready(function () {
+                datetime = $('#time');
+                update();
+                setInterval(update, 1000);
+            });
+        </script>
+</body>
+
+</html>
