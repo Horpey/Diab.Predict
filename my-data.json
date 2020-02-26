@@ -1,0 +1,43 @@
+{
+    "name": "Diabetes",
+    "children": [{
+            "name": "Types",
+            "children": [{
+                    "name": "Robin"
+                },
+                {
+                    "name": "Anna"
+                },
+                {
+                    "name": "Craig"
+                }
+            ]
+        },
+        {
+            "name": "Symptoms",
+            "children": [{
+                    "name": "Jeff"
+                },
+                {
+                    "name": "Buffy"
+                },
+                {
+                    "name": "Karl"
+                }
+            ]
+        },
+        {
+            "name": "Causes",
+            "children": [{
+                    "name": "Jeff"
+                },
+                {
+                    "name": "Buffy"
+                },
+                {
+                    "name": "Karl"
+                }
+            ]
+        }
+    ]
+}
